@@ -52,7 +52,7 @@ export function ColumnContainer({
       <div
         ref={setNodeRef}
         style={style}
-        className="bg-columnBackgroundColor w-[350px] h-[500px] max-h-[500px] rounded-md opacity-60 border-2 border-rose-500"
+        className="bg-columnBackgroundColor w-[350px] h-[500px] max-h-[500px] rounded-md opacity-60 border-2 border-emerald-500"
       />
     )
   }
@@ -76,7 +76,7 @@ export function ColumnContainer({
           </div>
           {editMode ? (
             <input
-              className="bg-black focus:border-rose-500 border rounded outline-none px-2 "
+              className="bg-black focus:border-emerald-500 border rounded outline-none px-2 "
               value={column.title}
               onChange={(e) => updateColumn(column.id, e.target.value)}
               autoFocus
@@ -117,7 +117,7 @@ export function ColumnContainer({
         onClick={() => {
           createTask(column.id)
         }}
-        className="flex gap-2 items-center border-columnBackgroundColor border-x-columnBackgroundColor border-2 cursor-pointer rounded-md p-4 hover:bg-mainBackgroundColor hover:text-rose-500 active:bg-black"
+        className="flex gap-2 items-center border-columnBackgroundColor border-x-columnBackgroundColor border-2 cursor-pointer rounded-md p-4 hover:bg-mainBackgroundColor hover:text-emerald-500 active:bg-black"
       >
         <PlusCircle className="size-4" />
         Add Task
